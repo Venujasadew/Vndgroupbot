@@ -844,12 +844,12 @@ def main():
 
     if WEBHOOK:
         LOGGER.info("Using webhooks.")
-        updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN)
+        updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=1936340534:AAHw-G8p5QyDzplONwr2qqD89dK92Da7BVI)
 
         if CERT_PATH:
-            updater.bot.set_webhook(url=URL + TOKEN, certificate=open(CERT_PATH, "rb"))
+            updater.bot.set_webhook(url=URL + 1936340534:AAHw-G8p5QyDzplONwr2qqD89dK92Da7BVI, certificate=open(CERT_PATH, "rb"))
         else:
-            updater.bot.set_webhook(url=URL + TOKEN)
+            updater.bot.set_webhook(url=URL + 1936340534:AAHw-G8p5QyDzplONwr2qqD89dK92Da7BVI)
             client.run_until_disconnected()
 
     else:
@@ -866,6 +866,6 @@ def main():
 
 if __name__ == "__main__":
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
-    telethn.start(bot_token=TOKEN)
+    telethn.start(bot_token=1936340534:AAHw-G8p5QyDzplONwr2qqD89dK92Da7BVI)
     pbot.start()
     main()
